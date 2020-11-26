@@ -19,13 +19,15 @@ public class Produkt {
     public String getFoto() {
         switch (this.unterkategorie) {
             case SUBKAT1:
-                return "images/example-work01.jpg";
+                return "images/earlGrey.jpg";
             case SUBKAT2:
-                return "images/example-work07.jpg";
+                return "images/matchaTea.jpg";
             case SUBKAT3:
-                return "images/example-work02.jpg";
+                return "images/oolongTea.jpg";
+            case SUBKAT4:
+                return "images/peppermintTea.jpg";
         }
-        return "images/example-work03.jpg";
+        return "images/errorImage.jpg";
     }
 
     public String getPreisFormatiert() {

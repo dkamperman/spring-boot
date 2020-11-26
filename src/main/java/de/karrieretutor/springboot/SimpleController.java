@@ -35,10 +35,10 @@ public class SimpleController {
 
     private List<Produkt> createProdukte() {
         List<Produkt> produkte = new ArrayList<>();
-        produkte.add(new Produkt("Kloster Eberbach", "Rheingau", KAT1, SUBKAT1, 7.992342342));
-        produkte.add(new Produkt("Ernest & Julio Gallo", "Kalifornien", KAT2, SUBKAT2, 4.99));
-        produkte.add(new Produkt("Rioja", "Deutschland", KAT3, SUBKAT3, 6.99));
-        produkte.add(new Produkt("Rotkäppchen", "Sachsen", KAT4, SUBKAT4, 3.99));
+        produkte.add(new Produkt("Exquisite Earl Grey", "India", KAT1, SUBKAT1, 20.99));
+        produkte.add(new Produkt("Best Green Herbs", "Sri Lanka", KAT2, SUBKAT2, 12.99));
+        produkte.add(new Produkt("Magic Oolong", "China", KAT3, SUBKAT3, 15.99));
+        produkte.add(new Produkt("Ze German Peppermint", "Germany", KAT4, SUBKAT4, 11.99));
         return produkte;
     }
 }
