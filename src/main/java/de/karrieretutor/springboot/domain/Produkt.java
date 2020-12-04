@@ -14,7 +14,7 @@ import java.util.Locale;
 @Entity
 public class Produkt {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO  )
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @NotBlank(message = "{validation.produkt.name}")
@@ -33,8 +33,8 @@ public class Produkt {
     @Min(value = 1, message = "{validation.produkt.preis}")
     private Double preis;
 
-    @Transient
-    String foto;
+    private String dateiname;
+    private byte[] datei;
 
     public Produkt() {}
 
@@ -88,18 +88,20 @@ public class Produkt {
         this.preis = preis;
     }
 
-    public String getFoto() {
-        switch (this.unterkategorie) {
-            case SUBKAT1:
-                return "images/earlGrey.jpg";
-            case SUBKAT2:
-                return "images/matchaTea.jpg";
-            case SUBKAT3:
-                return "images/oolongTea.jpg";
-            case SUBKAT4:
-                return "images/peppermintTea.jpg";
-        }
-        return "images/errorImage.jpg";
+    public String getDateiname() {
+        return dateiname;
+    }
+
+    public void setDateiname(String dateiname) {
+        this.dateiname = dateiname;
+    }
+
+    public byte[] getDatei() {
+        return datei;
+    }
+
+    public void setDatei(byte[] datei) {
+        this.datei = datei;
     }
 
     public String getPreisFormatiert() {
@@ -116,7 +118,7 @@ public class Produkt {
                 ", kategorie=" + kategorie +
                 ", unterkategorie=" + unterkategorie +
                 ", preis=" + preis +
-                ", foto='" + foto + '\'' +
+                ", dateiname='" + dateiname + '\'' +
                 '}';
     }
 }
