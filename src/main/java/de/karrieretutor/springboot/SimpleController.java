@@ -65,7 +65,7 @@ public class SimpleController {
 
     @GetMapping("/entfernen")
     public String entfernen(@RequestParam Long id, Model model, RedirectAttributes redirect, Locale locale) {
-        String message = messageSource .getMessage("cart.not.found", new Long[]{id}, locale);
+        String message = messageSource.getMessage("cart.not.found", new Long[]{id}, locale);
         Produkt entferntesProdukt = warenkorb.produktEntfernen(id);
         if (entferntesProdukt != null) {
             message = messageSource.getMessage("cart.removed", new String[]{entferntesProdukt.getName()}, locale);
@@ -73,19 +73,5 @@ public class SimpleController {
         redirect.addFlashAttribute("message", message);
         model.addAttribute("warenkorb", warenkorb);
         return "redirect:/warenkorb.html";
-        return "redirect:warenkorb.html";
-    }
-
-    private List<Produkt> createProdukte() {
-        List<Produkt> produkte = new ArrayList<>();
-        produkte.add(new Produkt("Exquisite Earl Grey", "India", KAT1, SUBKAT1, 20.99));
-        produkte.add(new Produkt("Best Green Herbs", "Sri Lanka", KAT2, SUBKAT2, 12.99));
-        produkte.add(new Produkt("Magic Oolong", "China", KAT3, SUBKAT3, 15.99));
-        produkte.add(new Produkt("Ze German Peppermint", "Germany", KAT4, SUBKAT4, 11.99));
-        return produkte;
-    }
-
-    private Produkt findProduktById(Long produktId) {
-        return produkte.stream().filter(produkt -> produkt.getId() == produktId).findFirst().orElse(null);
     }
 }
