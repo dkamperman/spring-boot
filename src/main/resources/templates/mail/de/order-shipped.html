@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<title>Bestellbestätigung</title>
+	<title>Versandbestätigung</title>
 </head>
 <body>
 
 <p>Hallo <span th:text="${kunde.nameFormatiert}"/>,<br/>
 	<br/>
-	Ihre Bestellung Nr. <span th:text="${bestellung.id}"/> ist bei uns eingegangen.</p>
+	Ihre Bestellung Nr. <span th:text="${bestellung.id}"/> ist versandt worden.</p>
 
 <p>Die Lieferung enthält folgende Artikel:<br/>
 	<div th:each="bp : ${bestellung.produkte}">
