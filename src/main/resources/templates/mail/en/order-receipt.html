@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<title>Order Confirmation</title>
+	<title>Order confirmation</title>
 </head>
 <body>
 
@@ -21,10 +21,8 @@
 	Total number of ordered products: <span th:text="${bestellung.gesamtzahl}"/>,
 	Total price: <span th:text="${bestellung.gesamtpreis}"/><br/>
 </p>
-<p>No more changes can be made to your order as it is already being shipped.</p>
 
-<p>Your order should arrive within the next 3 working days.<br/>
-	Sent to the following address:<br/>
+<p>Shipping address:<br/>
 	<span th:text="${kunde.nameFormatiert}"/><br/>
 	<span th:text="${kunde.strasse}"/><br/>
 	<span th:text="${kunde.plz}"/> <span th:text="${kunde.ort}"/>
@@ -35,6 +33,7 @@
 </p>
 
 Best regards,<br/>
+// TODO change shop name
 your Demo-Shop team
 </body>
 </html>
