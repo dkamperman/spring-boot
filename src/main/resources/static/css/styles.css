@@ -1,6 +1,6 @@
 .portfolio-header {
   position: relative;
-  background-image: url(../images/whiteBackground.jpg);
+  background-image: url(../images/titleBackground.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -10,6 +10,10 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.mdl-layout__header {
+  color: rgba(255, 255, 255, 1);
 }
 
 .mdl-layout__title {
@@ -182,8 +186,20 @@ img.article-image {
 }
 
 footer {
-  background-image: url(../images/footer-background.png);
+  background-image: url(../images/footerBackground.png);
   background-size: cover;
+}
+
+.mdl-logo {
+  color: rgba(255, 255, 255, 1);
+}
+
+.mdl-mini-footer {
+  color: rgba(255, 255, 255, 1);
+}
+
+a {
+  color: rgba(255, 255, 255, 1);
 }
 
 .mdl-textfield__label.select {
