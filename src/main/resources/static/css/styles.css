@@ -1,6 +1,6 @@
 .portfolio-header {
   position: relative;
-  background-image: url(../images/titleBackground.png);
+  background-image: url(../images/backgroundImage.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -14,6 +14,18 @@
 
 .mdl-layout__header {
   color: rgba(255, 255, 255, 1);
+}
+
+mdl.layout__content {
+  background-image: url(../images/paperboard.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  background-image: url(../images/paperboard.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .mdl-layout__title {
@@ -190,17 +202,13 @@ footer {
   background-size: cover;
 }
 
-.mdl-logo {
-  color: rgba(255, 255, 255, 1);
-}
-
 .mdl-mini-footer {
   color: rgba(255, 255, 255, 1);
 }
 
 a {
-  color: rgba(255, 255, 255, 1);
-}
+    color: rgba(0, 0, 0, 1);
+  }
 
 .mdl-textfield__label.select {
   top: 0px;
