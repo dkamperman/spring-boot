@@ -1,0 +1,71 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title th:text="#{nav.legal}"></title>
+	<link th:replace="fragments/styles"/>
+</head>
+
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+	<div th:replace="fragments/header::large(titel='About')"/>
+	<div th:replace="fragments/header::small"/>
+	<main class="mdl-layout__content">
+		<div class="mdl-grid portfolio-max-width">
+
+			<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+				<div class="mdl-card__title">
+					<h2 class="mdl-card__title-text" th:text="#{nav.legal}"></h2>
+				</div>
+
+				<div class="mdl-grid portfolio-copy">
+					<h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline" th:text="#{legal.title}"></h3>
+					<div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
+						<p
+								Fresh Tea Shop<br/>
+								Straße 1<br/>
+								10245 Berlin<br/>
+								Deutschland
+						</p>
+						<p></p>
+						<p>
+							<strong>UID-Nummer: </strong>DE12345678<br/>
+							<strong>Wirtschafts-ID: </strong>DE123456789<br/>
+							<strong>Register: </strong>Handelsregister<br/>
+							<strong>Registernummer: </strong>HRB 123456<br/>
+							<strong>Registergericht: </strong>Musterhausen
+						</p>
+						<p></p>
+						<p>
+							<strong>Tel.: </strong>01234/56789<br/>
+							<strong>Fax: </strong>01234/56789-0<br/>
+							<strong>E-Mail: </strong><a href="mailTo://test@test.net">test@test.net</a>
+						</p>
+						<p></p>
+						<p>
+							<strong>Aufsichtsbehörde</strong><br/>
+							Bezirkshauptmannschaft Musterhausen<br/>
+							<strong>Webseite der Aufsichtsbehörde</strong><br/>
+							https://www.aufsichtsbeoerde-musterhausen.de/<br/>
+							<strong>Anschrift der Aufsichtsbehörde</strong><br/>
+							Musterweg 1, 12345 Musterhausen
+						</p>
+						<p></p>
+						<p>
+							<strong>Berufsbezeichnung: </strong>Webshop
+						</p>
+						<p></p>
+						<p>
+							<strong>Geschäftsführer</strong><br/>
+							Me Mustermann
+						</p>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+		<footer th:replace="fragments/footer"/>
+	</main>
+</div>
+</body>
+</html>
