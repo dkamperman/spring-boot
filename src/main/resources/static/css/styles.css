@@ -16,6 +16,14 @@
   color: rgba(255, 255, 255, 1);
 }
 
+.mdl-button--accent.mdl-button--accent {
+  color: rgba(13, 74, 89, 1);
+}
+
+.mdl-button--accent.mdl-button--accent.mdl-button--raised {
+  background-color: rgba(13, 74, 89, 1);
+}
+
 main {
   background-image: url(../images/paperboard.jpg);
   background-size: cover;
