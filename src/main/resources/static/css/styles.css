@@ -36,7 +36,7 @@
 }
 
 .portfolio-logo {
-  background: url(../images/logo.png) 50% no-repeat;
+  background: url(../images/teaLogo.jpg) 50% no-repeat;
   background-size: cover;
   height: 150px;
   width: 150px;
@@ -50,18 +50,21 @@
 }
 
 .portfolio-navigation-row {
-  background-color: rgba(0, 0, 0, 0.08);
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(128, 107, 90, 1);
   text-transform: uppercase;
-  height: 45px;
+  height: 60px;
 }
 
 .portfolio-navigation-row  .mdl-navigation {
+  color: rgba(255, 255, 255, 1);
   text-align: center;
   max-width: 1080px;
   width: 100%;
 }
 
 .portfolio-navigation-row .mdl-navigation__link {
+  color: rgba(255, 255, 255, 1);
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -69,7 +72,7 @@
 }
 
 .portfolio-header .mdl-layout__drawer-button {
-    background-color: rgba(197, 197, 197, 0.44);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .portfolio-navigation-row .is-active {
@@ -78,14 +81,15 @@
 }
 
 .portfolio-navigation-row .is-active:after {
+  color: rgba(255, 255, 255, 1);
   content: "";
   width: 70%;
-  height: 2px;
+  height: 4px;
   display: block;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: rgb(255,64,129);
+  background-color: rgb(255,255,255);
   left: 15%;
 }
 .mdl-card__checkout .mdl-card__title,
