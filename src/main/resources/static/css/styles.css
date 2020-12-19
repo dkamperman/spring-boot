@@ -41,6 +41,15 @@ main {
   text-overflow: ellipsis;
 }
 
+.mdl-card__supporting-text {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 40px;
+}
+
+.mdl-cell.mdl-cell--12-col {
+  background-color: rgba(255, 255, 255, 1);
+}
+
 .is-compact .mdl-layout__title span {
   display: none;
 }
@@ -113,6 +122,7 @@ main {
 .mdl-card__checkout .mdl-card__title,
 .portfolio-card .mdl-card__title {
   padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .portfolio-blog-card-full-bg {
